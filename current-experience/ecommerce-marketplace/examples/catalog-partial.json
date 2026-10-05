@@ -1,0 +1,22 @@
+{
+  "operation_id": "op-demo-partial-001",
+  "items": [
+    {
+      "external_id": "SKU-DEMO-003",
+      "version": 1,
+      "name": "Demo display",
+      "price_minor": 319900,
+      "currency": "RUB",
+      "stock": 3
+    },
+    {
+      "external_id": "SKU-DEMO-BROKEN",
+      "version": 1,
+      "name": "Invalid negative price",
+      "price_minor": -1,
+      "currency": "RUB",
+      "stock": 1
+    }
+  ]
+}
+

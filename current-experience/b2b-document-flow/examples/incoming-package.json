@@ -1,0 +1,44 @@
+{
+  "package_id": "package-demo-001",
+  "organization_id": "organization-demo",
+  "entities": [
+    {
+      "entity_id": "service-001",
+      "type": "delivery_receipt",
+      "direction": "incoming",
+      "status": "received"
+    },
+    {
+      "entity_id": "document-001",
+      "type": "acceptance_act",
+      "direction": "incoming",
+      "status": "ready_to_sign",
+      "fields": {
+        "amount": "12500.50",
+        "date": "2026-01-14",
+        "currency": "RUB",
+        "number": "ACT-DEMO-014"
+      }
+    }
+  ],
+  "authority": {
+    "employee_id": "employee-demo",
+    "certificate_owner_id": "employee-demo",
+    "power_of_attorney_status": "valid",
+    "document_action_within_granted_scope": true,
+    "direct_representation_verified": false,
+    "certificate_verified": true,
+    "organization_id": "organization-demo",
+    "delegation_bound_to_signer_and_organization": true,
+    "verified_document_ids": [
+      "document-001"
+    ]
+  },
+  "local_documents": {
+    "document-001": {
+      "status": "received",
+      "crm_record_id": "crm-act-demo"
+    }
+  },
+  "delivery_id": "delivery-demo-001"
+}

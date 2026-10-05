@@ -1,0 +1,22 @@
+{
+  "operation_id": "op-demo-valid-001",
+  "items": [
+    {
+      "external_id": "SKU-DEMO-001",
+      "version": 1,
+      "name": "Demo keyboard",
+      "price_minor": 129900,
+      "currency": "RUB",
+      "stock": 7
+    },
+    {
+      "external_id": "SKU-DEMO-002",
+      "version": 1,
+      "name": "Demo mouse",
+      "price_minor": 54900,
+      "currency": "RUB",
+      "stock": 12
+    }
+  ]
+}
+

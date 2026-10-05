@@ -1,0 +1,18 @@
+{
+  "identifier": "CON-DEMO-003",
+  "status": "in_progress",
+  "priority": "medium",
+  "assignee": {
+    "kind": "twin-agent",
+    "runtime": "codex"
+  },
+  "project": "browser-demo",
+  "source": {
+    "channel": "portal",
+    "reply_destination": "redacted"
+  },
+  "heartbeat": {
+    "event": "wakeup",
+    "result": "runtime_started"
+  }
+}

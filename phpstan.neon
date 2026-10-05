@@ -1,0 +1,13 @@
+parameters:
+    level: 8
+    paths:
+        - current-experience/ecommerce-marketplace/src
+        - current-experience/ecommerce-marketplace/bin
+        - current-experience/ecommerce-marketplace/tests
+        - current-experience/ecommerce-marketplace/public
+        - current-experience/b2b-document-flow/src
+        - current-experience/b2b-document-flow/bin
+        - current-experience/b2b-document-flow/tests
+        - current-experience/crm-workflow-backend/src
+        - current-experience/crm-workflow-backend/bin
+    tmpDir: .phpstan-cache

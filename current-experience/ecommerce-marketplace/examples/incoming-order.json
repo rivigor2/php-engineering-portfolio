@@ -1,0 +1,10 @@
+{
+  "external_order_id": "order-demo-001",
+  "delivery_window": {
+    "from": "2026-01-10T14:00:00+03:00",
+    "to": "2026-01-10T15:00:00+03:00"
+  },
+  "lines": [
+    {"sku": "bundle-demo", "quantity": 1, "unit_price_minor": 450000}
+  ]
+}

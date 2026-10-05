@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI-assisted development flow</title>
+  <desc id="desc">Portal message is routed to Paperclip, assigned to Cursor or Codex, executed under project rules, verified on stage and returned to a human.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#52606d"/>
+    </marker>
+    <style>
+      .box { stroke-width: 2; rx: 14; }
+      .human { fill: #e8f1ff; stroke: #2563eb; }
+      .dispatch { fill: #f3e8ff; stroke: #7c3aed; }
+      .execute { fill: #e7f8ef; stroke: #16854b; }
+      .verify { fill: #fff4d6; stroke: #c47a00; }
+      .branch { fill: #fff0f0; stroke: #c43d3d; }
+      .t { font-family: Arial, sans-serif; font-size: 19px; font-weight: 700; fill: #17202a; text-anchor: middle; }
+      .s { font-family: Arial, sans-serif; font-size: 15px; fill: #34495e; text-anchor: middle; }
+      .a { fill: none; stroke: #52606d; stroke-width: 3; marker-end: url(#arrow); }
+      .dash { fill: none; stroke: #c43d3d; stroke-width: 2.5; stroke-dasharray: 8 7; marker-end: url(#arrow); }
+      .label { font-family: Arial, sans-serif; font-size: 14px; font-weight: 700; fill: #52606d; text-anchor: middle; }
+      .heading { font-family: Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #17202a; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="720" fill="#ffffff"/>
+  <text x="720" y="45" class="heading">Portal → Paperclip → Cursor/Codex → Правила → человек</text>
+
+  <rect x="45" y="95" width="210" height="105" class="box human"/>
+  <text x="150" y="135" class="t">Portal</text>
+  <text x="150" y="163" class="s">сообщение с @mention</text>
+
+  <rect x="315" y="95" width="210" height="105" class="box dispatch"/>
+  <text x="420" y="135" class="t">Mention-router</text>
+  <text x="420" y="163" class="s">проект · mode · runtime</text>
+
+  <rect x="585" y="95" width="210" height="105" class="box dispatch"/>
+  <text x="690" y="135" class="t">Paperclip</text>
+  <text x="690" y="163" class="s">issue · assignee · wakeup</text>
+
+  <rect x="855" y="95" width="210" height="105" class="box dispatch"/>
+  <text x="960" y="135" class="t">Twin-агент</text>
+  <text x="960" y="163" class="s">Cursor/Codex · heartbeat</text>
+
+  <rect x="1125" y="95" width="270" height="105" class="box execute"/>
+  <text x="1260" y="135" class="t">Session gate</text>
+  <text x="1260" y="163" class="s">chronology → единый план</text>
+
+  <path d="M255 148 L315 148" class="a"/>
+  <path d="M525 148 L585 148" class="a"/>
+  <path d="M795 148 L855 148" class="a"/>
+  <path d="M1065 148 L1125 148" class="a"/>
+
+  <rect x="1015" y="300" width="275" height="110" class="box execute"/>
+  <text x="1152" y="342" class="t">Current step</text>
+  <text x="1152" y="370" class="s">изменение только проекта</text>
+
+  <rect x="690" y="300" width="265" height="110" class="box verify"/>
+  <text x="822" y="342" class="t">Verify</text>
+  <text x="822" y="370" class="s">code → HTTP → live UI</text>
+
+  <rect x="365" y="300" width="265" height="110" class="box verify"/>
+  <text x="497" y="342" class="t">Evidence</text>
+  <text x="497" y="370" class="s">STEP · RUN_STATE · Git</text>
+
+  <rect x="45" y="300" width="260" height="110" class="box dispatch"/>
+  <text x="175" y="342" class="t">Poller → Portal</text>
+  <text x="175" y="370" class="s">отчёт из Paperclip</text>
+
+  <path d="M1260 200 L1260 250 Q1260 275 1235 275 L1175 275 Q1152 275 1152 300" class="a"/>
+  <path d="M1015 355 L955 355" class="a"/>
+  <path d="M690 355 L630 355" class="a"/>
+  <path d="M365 355 L305 355" class="a"/>
+
+  <rect x="110" y="515" width="300" height="115" class="box human"/>
+  <text x="260" y="555" class="t">Человек</text>
+  <text x="260" y="583" class="s">принять · ответить · patch</text>
+
+  <rect x="1030" y="515" width="300" height="115" class="box branch"/>
+  <text x="1180" y="555" class="t">Blocked / session</text>
+  <text x="1180" y="583" class="s">park + статус в Portal</text>
+
+  <rect x="570" y="515" width="300" height="115" class="box execute"/>
+  <text x="720" y="555" class="t">Patch</text>
+  <text x="720" y="583" class="s">новые шаги · done неизменен</text>
+
+  <path d="M175 410 L175 470 Q175 490 195 490 L235 490 Q260 490 260 515" class="a"/>
+  <path d="M410 572 L570 572" class="a"/>
+  <text x="490" y="555" class="label">patch</text>
+
+  
+  
+
+  <path d="M720 515 L720 455 Q720 435 740 435 L1320 435 Q1350 435 1350 405 L1350 245 Q1350 220 1325 220 L1280 220" class="a"/>
+
+  <path d="M960 200 L960 465 Q960 485 980 485 L1140 485 Q1180 485 1180 515" class="dash"/>
+  <text x="1080" y="470" class="label">лимит / сбой</text>
+
+  <text x="720" y="685" class="s">Paperclip: запуск · Правила исполнения в проекте · Poller: ответ в чат · Человек: приёмка</text>
+</svg>

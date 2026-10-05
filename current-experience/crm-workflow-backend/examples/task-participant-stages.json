@@ -1,0 +1,20 @@
+{
+  "server_task": {
+    "task_id": "task-demo",
+    "board_id": "board-demo",
+    "version": 1,
+    "current_participant_ids": ["employee-a", "employee-b"],
+    "editor_ids": ["lead-demo"],
+    "allowed_stage_ids": ["todo", "in_progress", "done"],
+    "saved_stages": [
+      {"participant_id": "employee-a", "stage": "in_progress"},
+      {"participant_id": "former-employee", "stage": "done"}
+    ]
+  },
+  "requests": [
+    {"session_actor_id": "lead-demo", "expected_version": 1, "participant_id": "employee-b", "target_stage": "done"},
+    {"session_actor_id": "lead-demo", "expected_version": 2, "participant_id": "former-employee", "target_stage": "todo"},
+    {"session_actor_id": "outsider-demo", "expected_version": 2, "participant_id": "employee-a", "target_stage": "done"},
+    {"session_actor_id": "lead-demo", "expected_version": 1, "participant_id": "employee-a", "target_stage": "done"}
+  ]
+}

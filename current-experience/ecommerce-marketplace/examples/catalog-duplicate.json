@@ -1,0 +1,21 @@
+{
+  "operation_id": "op-demo-duplicate-001",
+  "items": [
+    {
+      "external_id": "SKU-DEMO-004",
+      "version": 1,
+      "name": "First value",
+      "price_minor": 10000,
+      "currency": "RUB",
+      "stock": 1
+    },
+    {
+      "external_id": "SKU-DEMO-004",
+      "version": 2,
+      "name": "Duplicate value",
+      "price_minor": 12000,
+      "currency": "RUB",
+      "stock": 2
+    }
+  ]
+}

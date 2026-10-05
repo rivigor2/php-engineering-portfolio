@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "fix_id": "browser-level-two-01",
+  "execution_mode": "merge",
+  "must_merge_into_implementation_plan": true,
+  "done_steps_are_immutable": true,
+  "append_steps": [3],
+  "do_not_break": [
+    "existing first level",
+    "catalog navigation",
+    "desktop controls",
+    "mobile controls"
+  ],
+  "acceptance": [
+    {
+      "id": "A01",
+      "criterion": "Второй уровень открывается отдельным маршрутом",
+      "verify": "browser navigation scenario"
+    },
+    {
+      "id": "A02",
+      "criterion": "Полный маршрут уровня завершается без обхода игровой механики",
+      "verify": "deterministic browser traversal"
+    },
+    {
+      "id": "A03",
+      "criterion": "Первый уровень и возврат в каталог не регрессировали",
+      "verify": "first-level regression scenario"
+    },
+    {
+      "id": "A04",
+      "criterion": "Сенсорное управление работает без горизонтального overflow",
+      "verify": "mobile viewport scenario"
+    }
+  ]
+}

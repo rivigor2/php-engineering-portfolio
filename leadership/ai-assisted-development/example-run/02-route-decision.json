@@ -1,0 +1,10 @@
+{
+  "accepted": true,
+  "reason": "ready_for_issue",
+  "provider": "codex",
+  "mode": "general",
+  "project": "browser-demo",
+  "workspace": "projects/browser-demo",
+  "clean_request": "Добавь второй уровень существующей браузерной игры: отдельный маршрут, семь целей, противник, завершение уровня, рестарт и переход из первого уровня. Первый уровень не ломать. Проверить desktop и mobile",
+  "fingerprint": "f6c3196aa9f1fe5705981101"
+}

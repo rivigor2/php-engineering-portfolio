@@ -1,0 +1,10 @@
+{
+  "message_id": "message-demo-001",
+  "idempotency_key": "delivery-demo-001",
+  "target_url": "http://127.0.0.1:8099/success",
+  "payload": {
+    "order_id": "ORDER-DEMO-001",
+    "total_minor": 129900,
+    "currency": "RUB"
+  }
+}

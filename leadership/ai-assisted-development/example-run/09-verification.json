@@ -1,0 +1,49 @@
+{
+  "syntax": {
+    "status": "pass",
+    "command": "runtime syntax check"
+  },
+  "http": {
+    "status": "pass",
+    "documents": [
+      "catalog",
+      "level-one",
+      "level-two"
+    ]
+  },
+  "browser_desktop": {
+    "status": "pass",
+    "viewport": "1280x900",
+    "scenarios": [
+      "catalog to level two",
+      "complete traversal",
+      "combat",
+      "restart",
+      "level one regression"
+    ],
+    "traversal_method": "test_state_access_with_deterministic_movement; combat_with_initial_position"
+  },
+  "browser_mobile": {
+    "status": "pass",
+    "viewport": "390x844",
+    "scenarios": [
+      "visible controls",
+      "touch attack",
+      "no horizontal overflow"
+    ]
+  },
+  "plan": {
+    "status": "pass",
+    "layers": [
+      "header",
+      "progress",
+      "details"
+    ],
+    "previous_in_review_step_preserved": true
+  },
+  "evidence_origin": "paraphrase_of_source_step_not_rerun_here",
+  "remote_plan_validation": {
+    "status": "not_accepted",
+    "reason": "different_project_returned"
+  }
+}

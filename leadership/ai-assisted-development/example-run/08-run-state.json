@@ -1,0 +1,16 @@
+{
+  "issue": "CON-DEMO-003",
+  "execution_status": "done",
+  "last_completed_step": 3,
+  "plan_current_step": null,
+  "human_acceptance": "not_recorded_in_source",
+  "verification": "reported_pass_in_source_step",
+  "previous_review": {
+    "step": 2,
+    "status": "in_review",
+    "changed_by_this_run": false
+  },
+  "rollback_commit": null,
+  "rollback_note": "hash_not_present_in_reviewed_step_report",
+  "next_action": "human_review"
+}

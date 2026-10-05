@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.5/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         cacheDirectory=".phpunit.cache"
+         colors="true">
+    <testsuites>
+        <testsuite name="current-experience">
+            <directory>current-experience/ecommerce-marketplace/tests</directory>
+            <directory>current-experience/b2b-document-flow/tests</directory>
+
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory>current-experience/ecommerce-marketplace/src</directory>
+            <directory>current-experience/b2b-document-flow/src</directory>
+            <directory>current-experience/crm-workflow-backend/src</directory>
+        </include>
+    </source>
+</phpunit>

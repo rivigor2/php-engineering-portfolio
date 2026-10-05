@@ -1,0 +1,7 @@
+{
+  "portfolio-arcade": {
+    "alias": "browser-demo",
+    "workspace": "projects/browser-demo",
+    "allowed": true
+  }
+}

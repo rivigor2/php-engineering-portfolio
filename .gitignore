@@ -1,0 +1,16 @@
+/vendor/
+/.phpunit.cache/
+/.phpstan-cache/
+/.php-cs-fixer.cache
+/current-experience/*/var/*
+!/current-experience/*/var/.gitkeep
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+
+# Superseded drafts live outside this repository.
+/cases/
+/projects/
+/current-engineering/
+/production-case-studies/
